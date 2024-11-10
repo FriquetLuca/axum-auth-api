@@ -1,0 +1,30 @@
+[package]
+name = "axum-auth-api"
+version = "0.1.0"
+authors = ["Luca F. <friquet.luca@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7" }
+axum-extra = { version = "0.9", features = ["typed-header"] }
+chrono = "0.4.26"
+derive_more = { version = "1.0", features = ["full"] }
+include_dir = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
+tokio = { version = "1.4", features = ["full"] }
+tower = { version = "0.5", features = ["full"] }
+tower-http = { version = "0.6", features = ["full"] }
+tower-cookies = "0.10"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+strum = { version = "0.26", features = ["derive"] }
+surrealdb = { version = "2.0", features = ["protocol-ws"] }
+surrealdb-migrator = { version = "0.2.1", features = ["from-directory"] }
+serde_json = "1.0.132"
+jsonwebtoken = "9"
+
+[dev-dependencies]
+anyhow = "1"
+httpc-test = "0.1.1"
+reqwest = "0.12"
